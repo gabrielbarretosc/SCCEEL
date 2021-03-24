@@ -1,0 +1,98 @@
+<mat-toolbar id="mainToolbar" color="primary">
+  <mat-icon (click)="onToolbarMenuToggle()" id="toolbarMenu">subject</mat-icon>
+  <span class="toolbar-spacer"> xd</span>
+  <mat-icon
+    class="toolbar-icon"
+    matBadge="8"
+    matBadgePosition="after"
+    matBadgeColor="accent"
+    >notifications</mat-icon
+  >
+</mat-toolbar>
+
+<mat-sidenav-container id="sidenavContainer" fullscreen>
+  <mat-sidenav
+    mode="side"
+    #sidenav
+    id="sidenav"
+    [class.menu-open]="isMenuOpen"
+    [class.menu-close]="!isMenuOpen"
+    opened
+  >
+    <mat-list id="menus">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="avatar"></div>
+
+          <mat-card-title>Victor Dias</mat-card-title>
+          <mat-card-subtitle>admin</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button routerLink="/dashboard">
+          <mat-icon>dashboard</mat-icon>
+          Dashboard
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>group_work</mat-icon>
+          Laboratórios
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>desktop_windows</mat-icon>
+          Equipamentos
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>request_page</mat-icon>
+          Gastos
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>task_alt</mat-icon>
+          Metas
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>analytics</mat-icon>
+          Predições
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>history</mat-icon>
+          Histórico
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>settings_application</mat-icon>
+          Dispositivos
+        </button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button class="menu-item" mat-flat-button>
+          <mat-icon>description</mat-icon>
+          Relatório Geral
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
