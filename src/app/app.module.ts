@@ -5,19 +5,28 @@ import {
   BrowserAnimationsModule,
   NoopAnimationsModule
 } from "@angular/platform-browser/animations";
+import { HighchartsChartModule } from "highcharts-angular";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { LaboratoriosComponent } from "./dashboard/laboratorios/laboratorios.component";
+import { GraficoComponent } from "./dashboard/grafico/grafico.component";
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    LaboratoriosComponent,
+    GraficoComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
