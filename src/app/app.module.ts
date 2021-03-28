@@ -6,19 +6,22 @@ import {
   NoopAnimationsModule
 } from "@angular/platform-browser/animations";
 import { HighchartsChartModule } from "highcharts-angular";
+import { NgxGaugeModule } from 'ngx-gauge';
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { LaboratoriosComponent } from "./dashboard/laboratorios/laboratorios.component";
 import { GraficoComponent } from "./dashboard/grafico/grafico.component";
+import { Grafico2Component } from './dashboard/grafico2/grafico2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     LaboratoriosComponent,
-    GraficoComponent
+    GraficoComponent,
+    Grafico2Component
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { GraficoComponent } from "./dashboard/grafico/grafico.component";
     MaterialModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    NgxGaugeModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

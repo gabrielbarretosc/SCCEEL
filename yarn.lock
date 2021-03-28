@@ -5552,6 +5552,11 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
+ngx-gauge@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-gauge/-/ngx-gauge-1.1.0.tgz#fdc7b8fe8ecc58e694328f73c098bbf6a4126bfc"
+  integrity sha512-tclLMKz55X7nGvz10mogyl1TvH2lrI0uSEo1aCvP3h4Rrq6gwKvc2ItSRwVCuA1WgSVJYOjxzTZzUB6BiewFmw==
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
